@@ -43,6 +43,8 @@
           <th>Precio</th>
           <th>Valoración</th>
           <th>Stock</th>
+          <th>Ancho</th>
+          <th>Alto</th>
         </tr>
         </thead>
         <tbody>
@@ -60,6 +62,8 @@
               <td>{{ product.price | currency:'EUR' }}</td>
               <td>⭐ {{ product.rating }}</td>
               <td>{{ product.stock }}</td>
+              <td>{{ product.dimensions.width }}</td>
+              <td>{{ product.dimensions.height }}</td>
             </tr>
           }
         </tbody>
